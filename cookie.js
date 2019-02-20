@@ -74,6 +74,7 @@ function isImportant(xhttp){
     if(array[i] === name){
       nameFound = true;
     }
+    console.log(array[i]);
   }
 
 }
