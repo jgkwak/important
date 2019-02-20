@@ -68,7 +68,7 @@ function move() {
 
 function isImportant(xhttp){
   let array = xhttp.responseText.split("\r");
-  console.log(array[i]);
+  console.log(array[0]);
   document.getElementById("testing").innerHTML = String(array[0]);
 
   for (i of array) {
