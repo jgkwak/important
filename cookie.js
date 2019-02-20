@@ -67,8 +67,10 @@ function move() {
 }
 
 function isImportant(xhttp){
-  let array = xhttp.responseText.split("\n");
-  document.getElementById("testing").innerHTML = array[0];
+  let para_node = document.getElementsByTagName("p")[0]; 
+  let newtext = xhttp.responseText.replace(/\\n/mg,"\n");
+  let array = newtext.split("\n");
+  document.getElementById("testing").innerHTML = array[i];
 
 //   for (i of array) {
 //     let new_p = document.createElement("p");
