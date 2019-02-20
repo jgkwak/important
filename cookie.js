@@ -73,7 +73,7 @@ function isImportant(xhttp){
 
   for (i of array) {
     let new_p = document.createElement("p");
-    let label = document.createTextNode(para_text);
+    let label = document.createTextNode(array[i]);
     new_p.appendChild(label);
     let first_child = para_node.firstChild;
     para_node.appendChild(new_p); 
