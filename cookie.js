@@ -71,7 +71,7 @@ function isImportant(xhttp){
   //let newtext = xhttp.responseText.replace(/\\n/mg,"\n");
   let array = xhttp.responseText.split("\n");
   document.getElementById("testing").innerHTML = String(array[0]);
-  console.log(String(array[1]);
+  console.log(String(array[1]));
 
   // for (i of array) {
   //   let new_p = document.createElement("p");
