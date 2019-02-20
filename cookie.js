@@ -68,11 +68,15 @@ function move() {
 
 function isImportant(xhttp){
   var para = xhttp.responseText;
-  para = para.replace(/\r\n/g, "\n");
-  para = para.replace(/\n\r/g, "\n");
-  para = para.replace(/\r/g, "\n");
   var array = para.split("\n");
   console.log(array[0]);
+  var one = array[0];
+  var word;
+  for (i of one.length)
+  {
+    word+= one[i];
+  }
+  console.log(word);
   document.getElementById("testing").innerHTML = String(array[0]);
 
   for (i of array) {
