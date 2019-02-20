@@ -67,19 +67,17 @@ function move() {
 }
 
 function isImportant(xhttp){
-  var para = xhttp.responseText;
-  let newtext = xhttp.responseText.replace(/\\n/mg,"\n");
-  newtext = xhttp.responseText.replace("","\n");
-  newtext = xhttp.responseText.replace(undefined,"\n");
-  newtext = xhttp.responseText.replace(null,"\n");
-  var array = newtext.split("\n");
+  var array = xhttp.responseText.split("\n");
   console.log(array[0]);
   var one = array[0];
   var word;
   var i;
-  for (i = 1; i < one.length; i++)
+  for (i = 0; i < one.length; i++)
   {
-    word+= one[i];
+    if(one[i] != (NaN || undefined || null))
+      {
+        word+= one[i];
+      }
   }
   console.log(word);
   document.getElementById("testing").innerHTML = String(array[0]);
