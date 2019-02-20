@@ -67,7 +67,18 @@ function move() {
 }
 
 function isImportant(xhttp){
-  document.getElementById("testing").innerHTML = xhttp.responseText;
+  let para_node = document.getElementsByTagName("p")[0]; 
+  let newtext = xhttp.responseText.replace(/\\n/mg,"\n")
+  let array = newtext.split("\n");
+
+  for (i of array) {
+    let new_p = document.createElement("p");
+    let label = document.createTextNode(para_text);
+    new_p.appendChild(label);
+    let first_child = para_node.firstChild;
+    para_node.appendChild(new_p); 
+  }
+  //document.getElementById("testing").innerHTML = xhttp.responseText;
 }
 
 
