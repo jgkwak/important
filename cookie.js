@@ -2,6 +2,8 @@
 let name = prompt("Please type in your name", "");
 var nameFound = false;
 
+readDoc('important.txt', isImportant);
+document.getElementById("notice").innerHTML += name;
 
 if (nameFound === true)
 {
@@ -13,8 +15,6 @@ else{
  document.getElementById("title").style.display = "block";
 }
 
-document.getElementById("notice").innerHTML += name;
-readDoc('important.txt', isImportant);
 move();
 
 function readDoc(text, funct){
