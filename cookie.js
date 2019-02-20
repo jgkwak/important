@@ -3,7 +3,7 @@ let name = prompt("Please type in your name", "");
 var nameFound = false;
 
 
-if (name === "Jennifer Kwak")
+if (nameFound === true)
 {
   document.getElementById("valid").style.display = "block";
   document.getElementById("title").style.display = "block";
@@ -67,17 +67,13 @@ function move() {
 }
 
 function isImportant(xhttp){
-  let para_node = document.getElementsByTagName("p")[0]; 
   let array = xhttp.responseText.split("\n");
   document.getElementById("testing").innerHTML = String(array[0]);
-  console.log(String(array[1]));
 
   for (i of array) {
-    let new_p = document.createElement("p");
-    let label = document.createTextNode(String(array[i]));
-    new_p.appendChild(label);
-    let first_child = para_node.firstChild;
-    para_node.appendChild(new_p); 
+    if(array[i] === name){
+      nameFound = true;
+    }
   }
 
 }
