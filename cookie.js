@@ -67,7 +67,8 @@ function move() {
 }
 
 function isImportant(xhttp){
-  let array = xhttp.responseText.split("\n");
+  let array = xhttp.responseText.split("\r");
+  console.log(array[i]);
   document.getElementById("testing").innerHTML = String(array[0]);
 
   for (i of array) {
