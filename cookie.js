@@ -14,7 +14,7 @@ else{
 }
 
 document.getElementById("notice").innerHTML += name;
-readDoc('important.txt',isImportant);
+readDoc('important.txt', isImportant;
 move();
 
 function readDoc(text, funct){
