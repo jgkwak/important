@@ -70,7 +70,7 @@ function move() {
 function isImportant(xhttp){
   let para_node = document.getElementsByTagName("p")[0]; 
   //let newtext = xhttp.responseText.replace(/\\n/mg,"\n");
-  let array = newtext.split("\n");
+  let array = xhttp.responseText.split("\n");
   document.getElementById("testing").innerHTML = array[0];
   console.log(array[0]);
 
