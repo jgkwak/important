@@ -1,0 +1,28 @@
+body{
+
+	font-family: Times New Roman, serif;
+}
+
+#backdrop{
+	position: relative;
+	background-color: gray;
+	height: 300px;
+	width: 100%;
+	padding-top: 60px;
+}
+
+#object{
+	position: absolute;
+	background-color: red;
+	height: 200px;
+	width: 400px;
+}
+
+#notice{
+	padding-top: 10px;
+	text-align: center;
+}
+
+#title, #invalid, #valid {
+	display: none;
+}
