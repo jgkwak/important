@@ -73,7 +73,7 @@ function isImportant(xhttp){
   var one = array[0];
   var word;
   var i;
-  for (i = 0; i < one.length; i++)
+  for (i = 1; i < one.length; i++)
   {
     word+= one[i];
   }
