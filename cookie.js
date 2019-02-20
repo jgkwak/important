@@ -68,19 +68,18 @@ function move() {
 
 function isImportant(xhttp){
   let para_node = document.getElementsByTagName("p")[0]; 
-  //let newtext = xhttp.responseText.replace(/\\n/mg,"\n");
   let array = xhttp.responseText.split("\n");
   document.getElementById("testing").innerHTML = String(array[0]);
   console.log(String(array[1]));
 
-  // for (i of array) {
-  //   let new_p = document.createElement("p");
-  //   let label = document.createTextNode(array[i]);
-  //   new_p.appendChild(label);
-  //   let first_child = para_node.firstChild;
-  //   para_node.appendChild(new_p); 
-  // }
-  // document.getElementById("testing").innerHTML = xhttp.responseText;
+  for (i of array) {
+    let new_p = document.createElement("p");
+    let label = document.createTextNode(array[i]);
+    new_p.appendChild(label);
+    let first_child = para_node.firstChild;
+    para_node.appendChild(new_p); 
+  }
+
 }
 
 
