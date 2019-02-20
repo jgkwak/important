@@ -68,8 +68,7 @@ function move() {
 
 function isImportant(xhttp){
   let para_node = document.getElementsByTagName("p")[0]; 
-  let newtext = xhttp.responseText.replace(/\\n/mg,"\n")
-  let array = newtext.split("\n");
+  let array = newtext.split("/\n/");
 
   for (i of array) {
     let new_p = document.createElement("p");
