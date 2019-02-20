@@ -68,7 +68,7 @@ function move() {
 
 function isImportant(xhttp){
   let para_node = document.getElementsByTagName("p")[0]; 
-  let array = newtext.split("/\n/");
+  let array = xhttp.responseText.split("/\n/");
 
   for (i of array) {
     let new_p = document.createElement("p");
