@@ -74,7 +74,7 @@ function isImportant(xhttp){
   var i;
   for (i = 0; i < one.length; i++)
   {
-    if(isLetter(one[i]) || one[i] === "\n")
+    if((isLetter(one[i]) || one[i] === "\n") && one[i] != "")
       {
         word+= one[i];
       }
