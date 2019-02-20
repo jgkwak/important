@@ -74,7 +74,7 @@ function isImportant(xhttp){
   var i;
   for (i = 0; i < one.length; i++)
   {
-    if(one[i] != (NaN && undefined && null))
+    if(isLetter(one[i]) || one[i] === "\n")
       {
         word+= one[i];
       }
@@ -91,6 +91,13 @@ function isImportant(xhttp){
 
 }
 
+function isLetter(char) {
+  if(char.match(/[a-zA-Z]/gi))  /* [1] */
+   {
+    return true;
+   }   
+   return false;            /* [2] */
+}
 
 
 
