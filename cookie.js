@@ -68,7 +68,10 @@ function move() {
 
 function isImportant(xhttp){
   var para = xhttp.responseText;
-  let newtext = xhttp.responseText.replace(/\\n/mg,"\n")
+  let newtext = xhttp.responseText.replace(/\\n/mg,"\n");
+  let newtext = xhttp.responseText.replace("","\n");
+  let newtext = xhttp.responseText.replace(undefined,"\n");
+  let newtext = xhttp.responseText.replace(null,"\n");
   var array = newtext.split("\n");
   console.log(array[0]);
   var one = array[0];
