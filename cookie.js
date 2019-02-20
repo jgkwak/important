@@ -72,7 +72,7 @@ function isImportant(xhttp){
   console.log(array[0]);
   var one = array[0];
   var word;
-  for (i of one.length)
+  for (i -0; i < one.length; i++)
   {
     word+= one[i];
   }
