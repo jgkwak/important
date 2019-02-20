@@ -16,7 +16,6 @@ else{
 document.getElementById("notice").innerHTML += name;
 readDoc('important.txt', isImportant);
 move();
-tester();
 
 function readDoc(text, funct){
   var xhttp = new XMLHttpRequest();
