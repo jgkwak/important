@@ -73,14 +73,14 @@ function isImportant(xhttp){
   let array = newtext.split("/\n/");
   document.getElementById("testing").innerHTML = array[0];
 
-  for (i of array) {
-    let new_p = document.createElement("p");
-    let label = document.createTextNode(array[0]);
-    new_p.appendChild(label);
-    let first_child = para_node.firstChild;
-    para_node.appendChild(new_p); 
-  }
-  document.getElementById("testing").innerHTML = xhttp.responseText;
+//   for (i of array) {
+//     let new_p = document.createElement("p");
+//     let label = document.createTextNode(array[0]);
+//     new_p.appendChild(label);
+//     let first_child = para_node.firstChild;
+//     para_node.appendChild(new_p); 
+//   }
+//   document.getElementById("testing").innerHTML = xhttp.responseText;
 }
 
 
