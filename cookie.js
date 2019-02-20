@@ -74,7 +74,7 @@ function isImportant(xhttp){
   var i;
   for (i = 0; i < one.length; i++)
   {
-    if(one[i] != (NaN || undefined || null))
+    if(one[i] != (NaN && undefined && null))
       {
         word+= one[i];
       }
