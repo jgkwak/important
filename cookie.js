@@ -67,7 +67,7 @@ function move() {
 }
 
 function isImportant(xhttp){
-  var para = xhttp.responseText
+  var para = xhttp.responseText;
   para = para.replace(/\r\n/g, "\n");
   para = para.replace(/\n\r/g, "\n");
   para = para.replace(/\r/g, "\n");
