@@ -16,6 +16,7 @@ else{
 document.getElementById("notice").innerHTML += name;
 readDoc('important.txt', isImportant);
 move();
+tester();
 
 function readDoc(text, funct){
   var xhttp = new XMLHttpRequest();
@@ -68,18 +69,19 @@ function move() {
 
 function isImportant(xhttp){
   let para_node = document.getElementsByTagName("p")[0]; 
-  let newtext = xhttp.responseText.replace(/\\n/mg,"\n");
+  //let newtext = xhttp.responseText.replace(/\\n/mg,"\n");
   let array = newtext.split("\n");
   document.getElementById("testing").innerHTML = array[0];
+  console.log(array[0]);
 
-//   for (i of array) {
-//     let new_p = document.createElement("p");
-//     let label = document.createTextNode(array[0]);
-//     new_p.appendChild(label);
-//     let first_child = para_node.firstChild;
-//     para_node.appendChild(new_p); 
-//   }
-//   document.getElementById("testing").innerHTML = xhttp.responseText;
+  // for (i of array) {
+  //   let new_p = document.createElement("p");
+  //   let label = document.createTextNode(array[i]);
+  //   new_p.appendChild(label);
+  //   let first_child = para_node.firstChild;
+  //   para_node.appendChild(new_p); 
+  // }
+  // document.getElementById("testing").innerHTML = xhttp.responseText;
 }
 
 
