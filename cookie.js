@@ -69,26 +69,9 @@ function move() {
 function isImportant(xhttp){
   var array = xhttp.responseText.split("\n");
   console.log(array[0]);
-  var one = array[0];
-  var word;
-  var i;
-  for (i = 0; i < one.length; i++)
-  {
-    if(isLetter(one[i]) && one[i] != "" && one[i] != " ")
-      {
-        word+= one[i];
-      }
-  }
-  console.log(word);
-  document.getElementById("testing").innerHTML = String(array[0]);
-
-  for (i of array) {
-    if(array[i] === name){
-      nameFound = true;
-    }
-    console.log(array[i]);
-  }
-
+  var one = "Foo Bar";
+  if(array[0] == one)
+    console.log = "correct";
 }
 
 function isLetter(char) {
