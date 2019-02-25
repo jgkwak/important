@@ -69,13 +69,18 @@ function move() {
 function isImportant(xhttp){
   jQuery.get('https://raw.githubusercontent.com/jgkwak/important/master/important.txt', function(data) {
     console.log(data);
+    var arr = data.split('/n');
+    console.log(arr);
+    if(arr[0] === "Foo Bar")
+      console.log("correct");
+    
   })
   var array = xhttp.responseText.split("\n");
   console.log(array[0].toString());
   console.log(typeof array[0]);
   var one = "Foo Bar ";
-  if(array[0] === one)
-    console.log("correct");
+  //if(arr[0] === one)
+   // console.log("correct");
 }
 
 function isLetter(char) {
