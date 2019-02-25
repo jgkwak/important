@@ -71,7 +71,7 @@ function isImportant(xhttp){
   console.log(array[0]);
   var one = "Foo Bar";
   if(array[0] == one)
-    console.log = "correct";
+    console.log("correct");
 }
 
 function isLetter(char) {
