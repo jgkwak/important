@@ -69,7 +69,7 @@ function move() {
 function isImportant(xhttp){
   jQuery.get('https://raw.githubusercontent.com/jgkwak/important/master/important.txt', function(data) {
     console.log(data);
-    var arr = data.split('/n');
+    var arr = data.split('/r');
     console.log(arr);
     if(arr[0] === "Foo Bar")
       console.log("correct");
