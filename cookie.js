@@ -70,7 +70,7 @@ function isImportant(xhttp){
   var array = xhttp.responseText.split("\n");
   console.log(array[0].toString());
   console.log(typeof array[0]);
-  var one = "Foo Bar";
+  var one = "Foo Bar ";
   if(array[0] === one)
     console.log("correct");
 }
