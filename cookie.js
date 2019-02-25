@@ -67,6 +67,9 @@ function move() {
 }
 
 function isImportant(xhttp){
+  jQuery.get('https://raw.githubusercontent.com/jgkwak/important/master/important.txt', function(data) {
+    console.log(data);
+  })
   var array = xhttp.responseText.split("\n");
   console.log(array[0].toString());
   console.log(typeof array[0]);
