@@ -1,0 +1,67 @@
+body {
+	font-family: "Trebuchet MS", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+	background: #F9E9D9;
+}
+
+/* Style for the Welcome Message */
+h1 {
+	font-size: 42px;
+	padding-bottom: 10px;
+	font-family: Garamond, "Times New Roman", serif;
+}
+
+/* Style for the Scrolling Message */
+marquee {
+	background: #FCEADE;
+	color: #383F51;
+	font-size: 18px;
+	padding: 5px;
+	margin: -30px -50px 30px;
+}
+
+/* Style for the Scrolling Message font, if there was an error during registration */
+#error {
+	color: red;
+}
+
+/* Style for the Scrolling Message font, if registration was successful */
+#success {
+	color: green;
+}
+
+/* Style for the content section */
+section {
+	background-color: white;
+	overflow: auto;
+	margin: 5px auto;
+	padding: 50px;
+	width: 600px;
+	height: 500px;
+	text-align: center;
+	color: #32021F;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px 2px #888888;
+}
+
+/* Style for the text input */
+input[type="text"], input[type="password"], select {
+	box-sizing: border-box;
+	outline: none;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #383F51;
+	background: transparent;
+	margin-bottom: 40px;
+	font: 20px Arial, Helvetica, sans-serif;
+	height: 35px;
+}
+
+/* Style for the buttons */
+input[type="button"], input[type="submit"] {
+	background-color: #30B594;
+	border: 1px solid #27A0A0;
+	color: white;
+	font-size: 20px;
+	padding: 10px 20px;
+	margin-top: 20px;
+}

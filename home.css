@@ -1,0 +1,116 @@
+body {
+	font-family: "Trebuchet MS", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+	background: #F9E9D9;
+}
+
+/* Style for the welcome message */
+h1 {
+	font-size: 42px;
+	padding-bottom: 10px;
+	font-family: Garamond, "Times New Roman", serif;
+}
+
+/* Style for the user's name in the welcome message */
+#welcomeName {
+	font-style: italic;
+}
+
+/* Style for the scrolling text */
+marquee {
+	background: #FCEADE;
+	color: #383F51;
+	font-size: 18px;
+	padding: 5px;
+	margin: -20px -20px 20px;
+}
+
+/* Style for the content section */
+section {
+	background-color: white;
+	margin: 5px auto;
+	padding: 20px;
+	width: 800px;
+	height: 100%;
+	text-align: center;
+	color: #32021F;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px 2px #888888;
+}
+
+/* Default setting, hiding all of the content */
+#view, #create, #edit, #frame {
+	display: none;
+}
+
+/* Style for the content label */
+legend {
+	font-size: 20px; color: #32021F; 
+	font-weight: bold;
+}
+
+#tableView{
+	height: 450px;
+}
+
+/* Style for iframe, displaying the table */
+iframe {
+	height: 95%;
+	width: 100%;
+	overflow: auto;
+	border: none;
+}
+
+/* Style for the content instructions */
+p {
+	font-size: 15px;
+	font-style: italic;
+	color: #A17C6B;
+}
+
+hr {
+  border-top: 2px dotted #32021F;
+}
+
+/* Style for the text boxes */
+input[type="text"], input[type="password"], select {
+	box-sizing: border-box;
+	outline: none;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #383F51;
+	background: transparent;
+	margin-bottom: 35px;
+	font-size: 20px;
+	height: 35px;
+}
+
+/* Style for the buttons */
+input[type="button"], input[type="submit"] {
+	background-color: #30B594;
+	border: none;
+	color: white;
+	font-size: 20px;
+	padding: 10px 20px;
+}
+
+/* Style for the logout and clear buttons */
+#logout, #clear {
+	background-color: #EF767A;
+}
+
+/* Style for the message regarding the clear button */
+small {
+	font-size: 10px;
+}
+
+#error {
+	color: red;
+	font-weight: bold;
+}
+
+/* Style for the clear buttons */
+#clear {
+	font-size: 15px;
+	padding: 5px 10px;
+	margin-top: 10px;
+}

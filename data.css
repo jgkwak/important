@@ -1,0 +1,41 @@
+body {
+	font-family: "Trebuchet MS", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+}
+
+table, th, td {
+	border: 1px solid #33BF9C;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 5px;
+}
+
+table {
+	width: 100%;
+}
+
+fieldset {
+	height: 500px;
+}
+
+th {
+	background: #30B594;
+	color: white;
+	text-align: center;
+	position: sticky;
+	top: 0;
+}
+
+/* Styling of the width of the Event ID column */
+tr th:nth-child(1) {
+	width: 90px;
+}
+
+/* Styling of the width of the Date and Time column */
+tr th:nth-child(3),tr th:nth-child(4) {
+	width: 120px;
+}
+
+/* Styling of the color of the Event ID column */
+tr td:nth-child(1) {
+	background: #95E2CF;
+}
